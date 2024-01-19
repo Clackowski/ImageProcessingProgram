@@ -1,0 +1,59 @@
+load norway-bridge-source-1024-768-jpg.jpg test
+
+sepia test test-sepiad
+
+grayscale test test-grayscaled
+
+greyscale test test-greyscaled
+
+sharpen test test-sharpened
+
+sharpen test-sharpened test-super-sharpened
+
+blur test test-blurred
+
+save grayscale.png test-grayscaled
+
+save sepia.jpg test-sepiad
+
+save sharpen.jpg test-sharpened
+
+save blur.png test-blurred
+
+load test-image.ppm test
+
+brighten 10 test test
+
+vertical-flip test test-brighter-10-vertical-flipped
+
+horizontal-flip test test-brighter-10-horizontal-flipped
+
+save test-brighter-10-vertical-flipped.ppm test-brighter-10-vertical-flipped
+
+brighten -30 test test
+
+luma-component test test-darker-20-luma
+
+red-component test test-darker-20-red
+
+green-component test test-darker-20-green
+
+blue-component test test-darker-20-blue
+
+save test-darker-20-blue.ppm test-darker-20-blue
+
+value-component test test-darker-20-value
+
+save darker-20-test.ppm test
+
+load norway-bridge-test-3-2.png test-loading-png
+
+load norway-bridge-test-3-2.bmp test-loading-bmp
+
+load darker-20-test.ppm final-test
+
+intensity-component final-test final-test-final
+
+save this-was-the-last-one-for-real.bmp final-test-final
+
+q
